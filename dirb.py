@@ -23,8 +23,9 @@ class BruteForcer:
     def brute_force(self):
         while not self.word_queue.empty():
             if keyboard.is_pressed("esc"):
-                  print(" stopping the process.")
+               
                 pid = os.getpid()
+                print(" stopping the process.")
                 os.kill(pid, signal.SIGTERM)
 
                 
