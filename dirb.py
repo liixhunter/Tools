@@ -23,7 +23,12 @@ class BruteForcer:
     def brute_force(self):
         while not self.word_queue.empty():
             if keyboard.is_pressed("esc"):
-                print("User stopped the process.")
+                  print(" stopping the process.")
+                pid = os.getpid()
+                os.kill(pid, signal.SIGTERM)
+
+                
+                
                 return
             word = self.word_queue.get()
             url = self.target_url + "/" + word
