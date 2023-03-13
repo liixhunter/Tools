@@ -3,6 +3,10 @@ import requests
 import queue
 import time
 import sys
+import subprocess
+subprocess.check_call([sys.executable, '-m', 'pip', 'install',
+'keyboard'])
+
 import keyboard  # pip install keyboard
 
 
