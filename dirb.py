@@ -58,7 +58,7 @@ class BruteForcer:
 
 if __name__ == "__main__":
     wordlist_file = "directories.txt"
-    target_url = "https://mayexperinfo.com/"
+    target_url = "https://example.com/"
     threads = 20
 
     bf = BruteForcer(wordlist_file, target_url, threads)
